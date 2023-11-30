@@ -1,0 +1,250 @@
+
+body{
+	font-family: 'orbitron', sans-serif;
+  font-weight: bolder;
+}
+
+i {
+	margin-right: 30px;
+}
+/*----------bootstrap-navbar-css------------*/
+.navbar-logo{
+	padding: 10px;
+	color: white;
+}
+.navbar-mainbg {
+  background-color: #64bee8;
+  padding: 0;
+  border-radius: 12%;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 45px;
+  position: relative;
+}
+
+.header-background-photo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 45%;
+  border-top-right-radius:45px;
+  background-image: url('./photos/robot2.jpg');
+  background-size: cover;
+  z-index: +1;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.gallery img {
+  width: 200px;
+  height: 150px;
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+}
+
+#navbarSupportedContent{
+	overflow: hidden;
+	position: relative;
+}
+#navbarSupportedContent ul{
+	padding: 0px;
+	margin: 0px;
+}
+#navbarSupportedContent ul li a i{
+	margin-right: 10px;
+}
+#navbarSupportedContent li {
+	list-style-type: none;
+	float: left;
+}
+#navbarSupportedContent ul li a{
+	color: whitesmoke;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    padding: 15px 15px;
+    transition-duration:0.8s;
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    position: relative;
+}
+#navbarSupportedContent>ul>li.active>a{
+	color: #64bee8;
+	background-color: transparent;
+	transition: all 0.7s;
+}
+#navbarSupportedContent a:not(:only-child):after {
+	content: "\f105";
+	position: absolute;
+	right: 20px;
+	top: 10px;
+	font-size: 14px;
+	font-family: "Font Awesome 5 Free";
+	display: inline-block;
+	padding-right: 3px;
+	vertical-align: middle;
+	font-weight: 900;
+	transition: 0.5s;
+}
+
+.hori-selector{
+	display:inline-block;
+	position:absolute;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	transition-duration:0.6s;
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	background-color: #fff;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	margin-top: 10px;
+}
+.hori-selector .right,
+.hori-selector .left{
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	background-color: #fff;
+	bottom: 10px;
+}
+.hori-selector .right{
+	right: -25px;
+}
+.hori-selector .left{
+	left: -25px;
+}
+.hori-selector .right:before,
+.hori-selector .left:before{
+	content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #64bee8;
+}
+.hori-selector .right:before{
+	bottom: 0;
+    right: -25px;
+}
+.hori-selector .left:before{
+	bottom: 0;
+    left: -25px;
+}
+
+/*  About Us   body*/
+
+.about{
+  font-family: 'PT Mono', monospace;
+  font-size: xx-large;
+  font-weight: bolder;
+  font-display: inline;
+  color: #10bee8;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 0px;
+  letter-spacing: 8px;
+}
+
+.text{
+  position: absolute;
+  letter-spacing: 1px;
+  width: 45%;
+  padding-top: 0px;
+  padding-left: 40px;
+  line-height: 25px;
+  font-family: 'PT Mono', monospace;
+  font-size: 20px;
+  text-align: justify;
+  opacity: .55;
+
+}
+
+.slide{
+  padding-left: 55%;
+  padding-right: 0px;
+}
+.image_bottom {
+  padding-left: 20px;
+  margin-top: 40px;
+  display: inline;
+  max-width: 70%;
+  box-shadow: 2px 2px 5px #999;
+  transition: all 0.3s ease;
+ }
+ 
+ .image_bottom:hover {
+  transform: scale(1.1);
+  box-shadow: 4px 4px 10px #999;
+ }
+
+/* footer */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  background-color: whitesmoke;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  position: relative; 
+ }
+ 
+ .footer-contact-info{
+  background-image: url('./photos/takneek.png');
+  background-size: cover;
+  border-top-left-radius: 50px;
+  width: 50%;
+  height: 100%;
+  color: black;
+ }
+ 
+ .footer-background-photo {
+  position: absolute;
+  left: 65%; 
+  width: 35%;
+  height: 100%;
+  background-image: url('./photos/robobot.jpg');
+  background-size: cover;
+  background-position: center;
+  border-bottom-right-radius: 50px;
+ }
+ 
+ .footer-social-media {
+  display: flex;
+  justify-content:last baseline;
+  padding:20px;
+  width: 100%;
+ }
+ 
+ .footer-social-media img {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
+  display: block;
+ }
+
+div a img:hover::before {
+
+  background-size: cover;
+  box-shadow: 0 0 15px #02bee8;
+}
+
+div a img:hover {
+  color: #02bee8;
+  box-shadow: 0 0 5px #02bee8;
+  text-shadow: 0 0 5px #02bee8;
+}
+
+
